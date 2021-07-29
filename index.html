@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*全局设置*/
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        body{
+            background: url("图/简约.jpg") no-repeat -350px -120px fixed;
+        }
+
+        /*导航设置*/
+        .Navigation {
+            background: rgba(255,255,255,0.8);
+            width: 1200px;
+            height: 70px;
+            margin: auto;
+            /*border-radius:0 0 10px 10px;*/
+        }
+        .Navigation ul {
+            width: 400px;
+            height: 50px;
+            float: left;
+            margin: 10px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .Navigation li {
+            float: left;
+            margin: 6px;
+        }
+        .Navigation a {
+            text-decoration: none;
+            font-size: 28px;
+            color: #404969;
+            font-weight: 700;
+            padding: 6px;
+        }
+        /*导航动态响应*/
+        .Navigation li:hover {
+            background-color: #3ec1d3;
+            border-radius: 10px;
+        }
+        .Navigation a:hover {
+            color: #f8f8f8;
+        }
+
+        /*盒子设置*/
+        .box {
+            width: 896px;
+            height: 224px;
+            background-color: #f2f6f5;
+            margin:60px auto;
+            border-radius: 20px;
+            /*box-shadow: 10px 10px 60px #d3d4d8;*/
+        }
+        .box li {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            float: left;
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            /*box-shadow: 5px 5px 5px #d3d4d8*/
+        }
+        .box img {
+            width: 100%;
+            height: 60%;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .box .p4 {
+            margin-right: 0;
+        }
+        .box p {
+            font-weight: 600;
+            color: #424242;
+            font-size: 15px;
+            text-align: center;
+        }
+        .box div {
+            width: 80px;
+            height: 24px;
+            margin: 20px auto;
+            border-radius: 12px;
+        }
+        .box a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #f5f5f5;
+            text-align: center;
+            display: block;
+            /*链接居中的要点display: block*/
+        }
+        /*盒子动态设置*/
+        .box li:hover{
+            position: relative;
+            border: 2px solid #ffcc00;
+        }
+        /*盒子颜色颜色*/
+        .color1 {
+            background-color: #ff9d00;
+        }
+        .color2 {
+            background-color: #3a5465;
+        }
+        .color3 {
+            background-color: #df3554;
+        }
+        .color4 {
+            background-color: #63707e;
+        }
+
+        /*滑动目录设置*/
+        .choice{
+            background-color: #f8f8f8;
+            float: left;
+            border-radius: 10px;
+            width: 120px;
+            height: 340px;
+            position: sticky;
+            top:130px ;
+            box-shadow: 10px 10px 60px #d3d4d8;
+            margin-left: 15px;
+            margin-top: 60px;
+        }
+        .choice li{
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+        .choice .last{
+            margin-bottom: 10px;
+        }
+        .choice a{
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            font-size: 20px;
+            color: #145374;
+        }
+        /*动态设置*/
+        .choice a:hover{
+            background-color: #ff9d00;
+            color: white;
+            border-radius: 10px;
+        }
+
+        /*box2设置*/
+        .box2 {
+            width: 896px;
+            height: 600px;
+            background-color: #f2f6f5 ;
+            margin: 20px auto;
+            /*box-shadow: 10px 10px 60px #d3d4d8;*/
+            border-radius: 10px;
+        }
+        .box_little1 {
+            width: 300px;
+            height: 580px;
+            border-radius: 10px;
+            /*background: url("图/女人.jpg") no-repeat -3500px -800px;*/
+            float: left;
+            margin: 10px;
+        }
+        .box_little1 img{
+            width: 100%;
+        }
+
+        .box2 li {
+            width: 566px;
+            height: 100px;
+            background-color: white;
+            border-radius: 10px;
+            float: left;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="Navigation">
+    <ul>
+        <li><a href="#">推荐</a></li>
+        <li><a href="#">生活</a></li>
+        <li><a href="#">游戏</a></li>
+        <li><a href="#">旅游</a></li>
+         <li><a href="#">更多</a></li>
+    </ul>
+</div>
+<div class="choice">
+    <ul>
+        <li><a href="#">美食大餐</a></li>
+        <li><a href="#">新鲜蔬菜</a></li>
+        <li><a href="#">糕点饮品</a></li>
+        <li><a href="#">鲜花绿植</a></li>
+        <li><a href="#">医疗服务</a></li>
+        <li class="last" ><a href="#">娱乐游戏</a></li>
+    </ul>
+</div>
+<ul class="box">
+    <li class="p1">
+        <img src="图/赛车.jpg" alt="赛车">
+        <p>速度追逐</p>
+        <div class="color1"><a href="#">进入</a></div>
+    </li>
+    <li class="p2">
+        <img src="图/波涛汹涌.jpg" alt="海浪">
+        <p>向往生活</p>
+        <div class="color2"><a href="#">进入</a></div>
+    </li>
+    <li class="p3">
+        <img src="图/蜘蛛侠.jpg" alt="蜘蛛侠">
+        <p>电子竞技</p>
+        <div class="color3"><a href="#">进入</a></div>
+    </li>
+    <li class="p4">
+        <img src="图/高耸入云.jpg" alt="高耸入云">
+        <p>旖旎风光</p>
+        <div class="color4"><a href="#">进入</a></div>
+    </li>
+</ul>
+<div class="box2">
+    <div class="box_little1"><img src="图/女人.jpg" alt=""></div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</div>
+
+</body>
+</html>
